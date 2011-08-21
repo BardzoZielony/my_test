@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @dupa.name %>
+</p>
+
+<p>
+  <b>Memo:</b>
+  <%= @dupa.memo %>
+</p>
+
+<p>
+  <b>Number:</b>
+  <%= @dupa.number %>
+</p>
+
+
+<%= link_to 'Edit', edit_dupa_path(@dupa) %> |
+<%= link_to 'Back', dupas_path %>

@@ -1,0 +1,2 @@
+class ChildDupa < Dupa
+end

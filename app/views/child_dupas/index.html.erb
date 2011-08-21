@@ -1,0 +1,24 @@
+<h1>Listing child_dupas</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @child_dupas.each do |child_dupa| %>
+  <tr>
+    <td><%= child_dupa.name %></td>
+    <td><%= child_dupa.memo %></td>
+    <td><%= child_dupa.number %></td> 
+    <td><%= link_to 'Show', child_dupa %></td>
+    <td><%= link_to 'Edit', edit_child_dupa_path(child_dupa) %></td>
+    <td><%= link_to 'Destroy', child_dupa, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Child dupa', new_child_dupa_path %>

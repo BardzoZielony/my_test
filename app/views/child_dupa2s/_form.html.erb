@@ -1,0 +1,21 @@
+<%= form_for(@child_dupa2) do |f| %>
+  <% if @child_dupa2.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@child_dupa2.errors.count, "error") %> prohibited this child_dupa2 from being saved:</h2>
+
+      <ul>
+      <% @child_dupa2.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

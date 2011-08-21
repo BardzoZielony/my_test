@@ -1,0 +1,17 @@
+<%= form_for(@child_dupa) do |f| %>
+  <% if @child_dupa.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@child_dupa.errors.count, "error") %> prohibited this child_dupa from being saved:</h2>
+
+      <ul>
+      <% @child_dupa.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module ChildDupa2sHelper
+end
