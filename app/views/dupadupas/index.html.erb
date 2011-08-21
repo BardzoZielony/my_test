@@ -1,0 +1,25 @@
+<h1>Listing dupadupas</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Message</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dupadupas.each do |dupadupa| %>
+  <tr>
+    <td><%= dupadupa.title %></td>
+    <td><%= dupadupa.message %></td>
+    <td><%= link_to 'Show', dupadupa %></td>
+    <td><%= link_to 'Edit', edit_dupadupa_path(dupadupa) %></td>
+    <td><%= link_to 'Destroy', dupadupa, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dupadupa', new_dupadupa_path %>

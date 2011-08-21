@@ -1,4 +1,6 @@
 MyTest::Application.routes.draw do
+  resources :dupadupas
+
   resources :child_dupa2s
 
   resources :child_dupas
